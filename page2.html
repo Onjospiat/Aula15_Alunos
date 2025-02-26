@@ -7,13 +7,18 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
-  <body>
+  <body onload="changeText()">
     <nav>
-      <a href="/">Home</a>
-      <a href="/page2.html" aria-current="page">Other page</a>
+      <a href="/" class="en">Home</a>
+      <a href="/" class="pt-BR">Página Inicial</a>
+      <a href="/page2.html" aria-current="page" class="en">Other page</a>
+      <a href="/page2.html" aria-current="page" class="pt-BR">Outra página</a>
+      <a onclick="changeText()" class="pt-BR">Muda Texto</a>
+      <a onclick="changeText()" class="en">Change Text</a>
     </nav>
     <main>
-      <h1>My other page</h1>
+      <h1 class="en">My other page</h1>
+      <h1 class="pt-BR">Minha outra página</h1>
     </main>
   </body>
 </html>
